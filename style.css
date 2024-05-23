@@ -1,0 +1,85 @@
+:root {
+  --primarycolor: greenyellow;
+  --secondarycolor: orange;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html {
+  background-color: var(--primarycolor);
+}
+
+body {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.counter {
+  width: 100%;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+}
+.counter .cp {
+  display: inline-flex;
+}
+.counter p {
+  margin: 20px;
+}
+
+.computersection {
+  margin-top: 20px;
+}
+.computersection h4 {
+  text-align: center;
+}
+
+.emojibox {
+  height: 20vh;
+  width: 20vh;
+  background: red;
+  border-style: dashed;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.resultsection {
+  width: 100%;
+  height: 60px;
+  background-color: var(--secondarycolor);
+  align-content: center;
+}
+
+.resultsection h4 {
+  text-align: center;
+}
+
+.playersection {
+  margin-top: 20px;
+}
+.playersection h4 {
+  text-align: center;
+}
+
+.buttons {
+  display: inline-flex;
+}
+.buttons button {
+  height: 15vh;
+  width: 100%;
+  display: grid;
+  border-radius: 5px;
+  margin: 10px 10px 30px 10px;
+  cursor: pointer;
+}
+.buttons button span {
+  font-size: 30px;
+  margin: 5px 5px 5px 5px;
+}
