@@ -5,32 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="style.css" />
-    <!--Add Favicon-->
     <link rel="icon" href="./assets/favicon.jpeg" />
   </head>
   <body>
-    <div class="counter">
-      <p class="copy">&copy 2024 <a href="#">Stanley Amunze</a></p>
+    <div class="nav">
+      <p class="copy"><b>&copy 2024</b> <a href="#">Stanley Amunze</a></p>
       <div class="cp">
-        <p>Computer</p>
-        <p>Player</p>
+        Computer
+        <span id="computerscoredisplay"> 0</span>
+        Player
+        <span id="playerscoredisplay">0</span>
       </div>
     </div>
-    <div class="computersection">
-      <h4>Computer</h4>
-      <div class="emojibox"></div>
+    <h4>Computer</h4>
+    <div id="computersection">
+      <div class="emojibox">👊</div>
     </div>
-    <div class="resultsection">
-      <h4>Draw</h4>
+    <div id="resultsection">
+      <h4></h4>
     </div>
-    <div class="playersection">
-      <h4>Player</h4>
-      <div class="emojibox"></div>
+    <h4>Player</h4>
+    <div id="playersection">
+      <div class="emojibox">✌️</div>
     </div>
-    <div class="buttons">
-      <button><span>👊</span>Rock</button>
-      <button><span>✋</span>Paper</button>
-      <button><span>✌️</span>Scissors</button>
+    <div class="choices">
+      <button onclick="PlayGame('rock')"><span>👊</span>Rock</button>
+      <button onclick="PlayGame('paper')"><span>✋</span>Paper</button>
+      <button onclick="PlayGame('scissors')"><span>✌️</span>Scissors</button>
     </div>
+
+    <script src="game.js"></script>
   </body>
 </html>
