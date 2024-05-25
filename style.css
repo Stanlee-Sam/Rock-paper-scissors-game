@@ -12,125 +12,129 @@
   font-family: "Press Start 2P", system-ui;
 }
 
-html {
-  background-color: var(--primarycolor);
+/*Media query break points
+  /* 2xl */
+@media (max-width: 1536px) {
+  html {
+    background-color: var(--primarycolor);
+  }
+
+  body {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .nav {
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .nav .cp {
+    display: flex;
+  }
+  .cp span {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .nav p {
+    margin: 20px;
+  }
+
+  #computersection {
+    margin-top: 20px;
+    height: 20vh;
+    width: 20vh;
+    border-style: dashed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    border-radius: 5px;
+  }
+  #computersection h4 {
+    text-align: top;
+  }
+
+  #resultsection {
+    width: 100%;
+    height: 60px;
+    background-color: var(--secondarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #resultsection h4 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  #playersection {
+    margin-top: 20px;
+    height: 20vh;
+    width: 20vh;
+    border-style: dashed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    border-radius: 5px;
+  }
+  #playersection h4 {
+    text-align: center;
+  }
+
+  .choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .choices button {
+    height: 15vh;
+    width: 100px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 10px 10px 30px 10px;
+    cursor: pointer;
+    font-size: 0.7rem;
+  }
+  .choices button span {
+    font-size: 50px;
+    margin: 5px 5px 5px 5px;
+  }
 }
 
-body {
-  width: 100%;
-  display: grid;
-  justify-items: center;
-  align-items: center;
+/* xs */
+@media (max-width: 525px) {
+  .nav {
+    font-size: 10px;
+  }
+
+  .cp span {
+    margin-right: 20px;
+  }
+
+  .choices button span {
+    font-size: 45px;
+    margin: 5px 5px 5px 5px;
+  }
 }
 
-.nav {
-  font-size: 12px;
-  width: 100%;
-  display: flex;
-  height: 30px;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.nav .cp {
-  display: flex;
-}
-.cp span {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.nav p {
-  margin: 20px;
-}
-
-#computersection {
-  margin-top: 20px;
-  height: 20vh;
-  width: 20vh;
-  border-style: dashed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  border-radius: 5px;
-}
-#computersection h4 {
-  text-align: top;
-}
-
-/*.emojibox {
-  height: 20vh;
-  width: 20vh;
-  border-style: dashed;
-  margin-top: 20px;
-  margin-bottom: 20px;*/
-
-/*height: 20vh;
-  width: 20vh;
-  border: 2px dashed black;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 5rem;
-}*/
-
-#resultsection {
-  width: 100%;
-  height: 60px;
-  background-color: var(--secondarycolor);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#resultsection h4 {
-  text-align: center;
-  font-size: 40px;
-}
-
-#playersection {
-  margin-top: 20px;
-  height: 20vh;
-  width: 20vh;
-  border-style: dashed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  border-radius: 5px;
-}
-#playersection h4 {
-  text-align: center;
-}
-
-.choices {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-.choices button {
-  /*height: 15vh;
-  width: 100%;
-  display: flex;
-  border-radius: 5px;
-  margin: 10px 10px 30px 10px;
-  cursor: pointer;*/
-  height: 15vh;
-  width: 100px;
-  display: grid;
-  /*flex-direction: column;*/
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  margin: 10px 10px 30px 10px;
-  cursor: pointer;
-  font-size: 0.7rem;
-}
-.choices button span {
-  font-size: 30px;
-  margin: 5px 5px 5px 5px;
+@media (max-width: 470px) {
+  .nav {
+    font-size: 9px;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
