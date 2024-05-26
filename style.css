@@ -139,3 +139,73 @@
     margin-bottom: 50px;
   }
 }
+
+@media (max-width: 352px) {
+  .nav {
+    font-size: 8px;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
+
+  #computersection {
+    margin-top: 10px;
+    height: 10vh;
+    width: 13vh;
+    border-style: dashed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 5px;
+  }
+  #computersection h4 {
+    text-align: top;
+  }
+
+  #resultsection {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #resultsection {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  #playersection {
+    margin-top: 10px;
+    height: 10vh;
+    width: 13vh;
+    font-size: 2rem;
+  }
+  #playersection h4 {
+    text-align: center;
+  }
+
+  .choices {
+    display: grid;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .choices button {
+    height: 10vh;
+    width: 80px;
+    font-size: 0.5rem;
+    padding-bottom: 5px;
+  }
+  .choices button span {
+    font-size: 30px;
+    margin: 5px 5px 5px 5px;
+  }
+}

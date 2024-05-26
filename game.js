@@ -1,6 +1,6 @@
 const choices = ["rock", "paper", "scissors"];
 const emojis = {
-  rock: "👊",
+  rock: "✊",
   paper: "✋",
   scissors: "✌️",
 };
